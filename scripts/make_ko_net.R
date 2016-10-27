@@ -1,7 +1,7 @@
 library(mmnet)
 library(biom)
-
-setwd("/Users/leahguthrie/Documents/2016/Labnotebook/Projects/Infla_cazy/data/")
+library("biomformat")
+setwd("/Users/leahguthrie/Einstein/Kelly-Lab/Labnotebook/Projects/Infla_cazy/data/")
 ###read in file
 mlow <- read.csv("KO_ctl_count.csv")
 ###
@@ -21,6 +21,19 @@ low <- as_long_data_frame(ssn)
 
 setwd("/Users/leahguthrie/Documents/2016/Labnotebook/Projects/Gutmicrobes_sig_CPT11_metabo/EMP2015/data")
 ##write to file
-write.csv(low, "low_netpoints.csv")
+write.csv(low, "ctl_ko_netpoints.csv")
 
+sessionInfo()
+#R version 3.3.1 (2016-06-21)
+#Platform: x86_64-apple-darwin13.4.0 (64-bit)
+#Running under: OS X 10.11.6 (El Capitan)
+
+#locale:
+#  [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+#attached base packages:
+#  [1] stats     graphics  grDevices utils     datasets  methods   base     
+
+#other attached packages:
+#  [1] mmnet_1.10.2         igraph_1.0.1         biomformat_1.0.2     biom_0.3.12          BiocInstaller_1.22.3
 
