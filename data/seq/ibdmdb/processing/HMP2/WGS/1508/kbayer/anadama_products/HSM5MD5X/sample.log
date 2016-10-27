@@ -1,0 +1,1047 @@
+10/01/2016 08:35:48 AM - humann2.humann2 - INFO: Running humann2 v0.9.2
+10/01/2016 08:35:48 AM - humann2.humann2 - INFO: Output files will be written to: /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X
+10/01/2016 08:35:48 AM - humann2.humann2 - INFO: Writing temp files to directory: /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2
+10/01/2016 08:35:48 AM - humann2.utilities - INFO: File ( /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X.fastq ) is of format:  fastq
+10/01/2016 08:35:48 AM - humann2.utilities - DEBUG: Check software, bowtie2, for required version, 2.2
+10/01/2016 08:35:49 AM - humann2.utilities - INFO: Using bowtie2 version 2.2
+10/01/2016 08:35:49 AM - humann2.humann2 - INFO: Search mode set to uniref90 because a uniref90 translated search database is selected
+10/01/2016 08:35:49 AM - humann2.utilities - DEBUG: Check software, diamond, for required version, 0.8.22
+10/01/2016 08:35:49 AM - humann2.utilities - INFO: Using diamond version 0.8.22
+10/01/2016 08:35:49 AM - humann2.config - INFO: 
+Run config settings: 
+
+DATABASE SETTINGS
+nucleotide database folder = /seq/ibdmdb/centos6/var/lib/humann2/chocophlan
+protein database folder = /seq/ibdmdb/centos6/var/lib/humann2/uniref
+pathways database file 1 = /seq/ibdmdb/centos6/humann2/humann2/data/pathways/metacyc_reactions_level4ec_only.uniref.bz2
+pathways database file 2 = /seq/ibdmdb/centos6/humann2/humann2/data/pathways/metacyc_pathways_structured_filtered
+utility mapping database folder = /seq/ibdmdb/centos6/humann2/humann2/data/misc
+
+RUN MODES
+resume = False
+verbose = False
+bypass prescreen = False
+bypass nucleotide index = False
+bypass nucleotide search = False
+bypass translated search = False
+translated search = diamond
+pick frames = off
+threads = 2
+
+SEARCH MODE
+search mode = uniref90
+identity threshold = 90.0
+
+ALIGNMENT SETTINGS
+evalue threshold = 1.0
+prescreen threshold = 0.01
+translated subject coverage threshold = 50.0
+translated query coverage threshold = 90.0
+
+PATHWAYS SETTINGS
+minpath = on
+xipe = off
+gap fill = off
+
+INPUT AND OUTPUT FORMATS
+input file format = fastq
+output file format = tsv
+output max decimals = 10
+remove stratified output = False
+log level = DEBUG
+
+10/01/2016 08:35:49 AM - humann2.store - DEBUG: Initialize Alignments class instance to minimize memory use
+10/01/2016 08:35:49 AM - humann2.store - DEBUG: Initialize Reads class instance to minimize memory use
+10/01/2016 08:36:05 AM - humann2.humann2 - INFO: Load pathways database part 1: /seq/ibdmdb/centos6/humann2/humann2/data/pathways/metacyc_reactions_level4ec_only.uniref.bz2
+10/01/2016 08:36:51 AM - humann2.humann2 - INFO: Load pathways database part 2: /seq/ibdmdb/centos6/humann2/humann2/data/pathways/metacyc_pathways_structured_filtered
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Faecalibacterium.s__Faecalibacterium_prausnitzii : 28.18% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bacteroides.s__Bacteroides_vulgatus : 24.57% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bacteroides.s__Bacteroides_ovatus : 5.68% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Sutterella.s__Sutterella_wadsworthensis : 4.91% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Veillonella.s__Veillonella_unclassified : 4.01% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bacteroides.s__Bacteroides_fragilis : 3.38% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bacteroides.s__Bacteroides_xylanisolvens : 2.88% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Parabacteroides.s__Parabacteroides_sp_D13 : 2.76% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Coprococcus.s__Coprococcus_sp_ART55_1 : 1.79% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Akkermansia.s__Akkermansia_muciniphila : 1.79% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bacteroides.s__Bacteroides_stercoris : 1.66% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bacteroides.s__Bacteroides_uniformis : 1.56% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Dorea.s__Dorea_longicatena : 1.34% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Subdoligranulum.s__Subdoligranulum_unclassified : 1.27% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bacteroides.s__Bacteroides_caccae : 1.16% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Blautia.s__Ruminococcus_torques : 1.13% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Veillonella.s__Veillonella_atypica : 1.01% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Clostridium.s__Clostridium_nexile : 1.00% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Roseburia.s__Roseburia_unclassified : 0.97% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Veillonella.s__Veillonella_parvula : 0.82% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Roseburia.s__Roseburia_intestinalis : 0.69% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Roseburia.s__Roseburia_inulinivorans : 0.57% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Haemophilus.s__Haemophilus_parainfluenzae : 0.53% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Escherichia.s__Escherichia_coli : 0.49% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bacteroides.s__Bacteroides_thetaiotaomicron : 0.43% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Dorea.s__Dorea_unclassified : 0.39% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Clostridium.s__Clostridium_hathewayi : 0.36% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Streptococcus.s__Streptococcus_salivarius : 0.28% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_7_1_58FAA : 0.23% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bacteroides.s__Bacteroides_dorei : 0.23% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Parabacteroides.s__Parabacteroides_unclassified : 0.22% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Collinsella.s__Collinsella_aerofaciens : 0.21% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Oscillibacter.s__Oscillibacter_unclassified : 0.20% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Eubacterium.s__Eubacterium_rectale : 0.19% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Alistipes.s__Alistipes_shahii : 0.19% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Veillonella.s__Veillonella_dispar : 0.18% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bifidobacterium.s__Bifidobacterium_adolescentis : 0.18% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Prevotella.s__Prevotella_copri : 0.18% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Streptococcus.s__Streptococcus_parasanguinis : 0.18% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Blautia.s__Ruminococcus_gnavus : 0.17% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_8_1_57FAA : 0.16% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Dorea.s__Dorea_formicigenerans : 0.15% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Parabacteroides.s__Parabacteroides_merdae : 0.14% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bacteroides.s__Bacteroides_intestinalis : 0.13% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Clostridium.s__Clostridium_symbiosum : 0.13% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_3_1_46FAA : 0.10% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Eubacterium.s__Eubacterium_eligens : 0.10% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Escherichia.s__Escherichia_unclassified : 0.10% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Parabacteroides.s__Parabacteroides_distasonis : 0.09% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Flavonifractor.s__Flavonifractor_plautii : 0.07% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Ruminococcus.s__Ruminococcus_bromii : 0.06% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Roseburia.s__Roseburia_hominis : 0.05% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Ruminococcus.s__Ruminococcus_lactaris : 0.05% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Clostridium.s__Clostridium_clostridioforme : 0.05% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Dialister.s__Dialister_invisus : 0.05% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bilophila.s__Bilophila_unclassified : 0.05% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Blautia.s__Ruminococcus_obeum : 0.04% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Alistipes.s__Alistipes_unclassified : 0.04% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Clostridiales_noname.s__Clostridiales_bacterium_1_7_47FAA : 0.04% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Clostridium.s__Clostridium_bolteae : 0.04% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Coprococcus.s__Coprococcus_comes : 0.03% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bacteroides.s__Bacteroides_salyersiae : 0.03% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Burkholderiales_noname.s__Burkholderiales_bacterium_1_1_47 : 0.03% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Anaerostipes.s__Anaerostipes_hadrus : 0.03% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bacteroides.s__Bacteroides_cellulosilyticus : 0.03% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Alistipes.s__Alistipes_finegoldii : 0.03% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Parasutterella.s__Parasutterella_excrementihominis : 0.03% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Ruminococcus.s__Ruminococcus_callidus : 0.03% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_1_1_57FAA : 0.02% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bifidobacterium.s__Bifidobacterium_longum : 0.02% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Megasphaera.s__Megasphaera_micronuciformis : 0.01% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Megasphaera.s__Megasphaera_unclassified : 0.01% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Found g__Bifidobacterium.s__Bifidobacterium_animalis : 0.01% of mapped reads
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Total species selected from prescreen: 73
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Burkholderiales_noname.s__Burkholderiales_bacterium_1_1_47.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bacteroides.s__Bacteroides_ovatus.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Alistipes.s__Alistipes_finegoldii.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bacteroides.s__Bacteroides_fragilis.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Streptococcus.s__Streptococcus_salivarius.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Coprococcus.s__Coprococcus_comes.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bifidobacterium.s__Bifidobacterium_animalis.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bacteroides.s__Bacteroides_uniformis.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Roseburia.s__Roseburia_hominis.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Akkermansia.s__Akkermansia_muciniphila.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bacteroides.s__Bacteroides_intestinalis.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bifidobacterium.s__Bifidobacterium_longum.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Veillonella.s__Veillonella_parvula.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bacteroides.s__Bacteroides_dorei.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Alistipes.s__Alistipes_shahii.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Blautia.s__Ruminococcus_obeum.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Veillonella.s__Veillonella_atypica.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bacteroides.s__Bacteroides_caccae.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bacteroides.s__Bacteroides_thetaiotaomicron.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Blautia.s__Ruminococcus_torques.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_8_1_57FAA.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Flavonifractor.s__Flavonifractor_plautii.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Prevotella.s__Prevotella_copri.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Megasphaera.s__Megasphaera_micronuciformis.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Parabacteroides.s__Parabacteroides_merdae.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bacteroides.s__Bacteroides_xylanisolvens.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Parabacteroides.s__Parabacteroides_sp_D13.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Haemophilus.s__Haemophilus_parainfluenzae.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Clostridium.s__Clostridium_nexile.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Parasutterella.s__Parasutterella_excrementihominis.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_7_1_58FAA.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Dorea.s__Dorea_longicatena.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bacteroides.s__Bacteroides_stercoris.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Roseburia.s__Roseburia_intestinalis.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bifidobacterium.s__Bifidobacterium_adolescentis.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bacteroides.s__Bacteroides_salyersiae.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Anaerostipes.s__Anaerostipes_hadrus.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_1_1_57FAA.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Ruminococcus.s__Ruminococcus_bromii.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Clostridium.s__Clostridium_hathewayi.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bacteroides.s__Bacteroides_cellulosilyticus.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Veillonella.s__Veillonella_dispar.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Blautia.s__Ruminococcus_gnavus.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Coprococcus.s__Coprococcus_sp_ART55_1.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Parabacteroides.s__Parabacteroides_distasonis.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Eubacterium.s__Eubacterium_rectale.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Clostridiales_noname.s__Clostridiales_bacterium_1_7_47FAA.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Eubacterium.s__Eubacterium_eligens.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Clostridium.s__Clostridium_bolteae.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Escherichia.s__Escherichia_coli.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Roseburia.s__Roseburia_inulinivorans.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Clostridium.s__Clostridium_clostridioforme.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Dialister.s__Dialister_invisus.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Streptococcus.s__Streptococcus_parasanguinis.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Faecalibacterium.s__Faecalibacterium_prausnitzii.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Ruminococcus.s__Ruminococcus_lactaris.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Clostridium.s__Clostridium_symbiosum.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Ruminococcus.s__Ruminococcus_callidus.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Collinsella.s__Collinsella_aerofaciens.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Dorea.s__Dorea_formicigenerans.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Bacteroides.s__Bacteroides_vulgatus.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Sutterella.s__Sutterella_wadsworthensis.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - DEBUG: Adding file to database: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_3_1_46FAA.centroids.v0.1.1.ffn.gz
+10/01/2016 08:36:51 AM - humann2.search.prescreen - INFO: Creating custom ChocoPhlAn database ........
+10/01/2016 08:36:51 AM - humann2.utilities - DEBUG: Using software: /bin/gunzip
+10/01/2016 08:36:52 AM - humann2.utilities - INFO: Execute command: /bin/gunzip -c /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Burkholderiales_noname.s__Burkholderiales_bacterium_1_1_47.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bacteroides.s__Bacteroides_ovatus.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Alistipes.s__Alistipes_finegoldii.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bacteroides.s__Bacteroides_fragilis.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Streptococcus.s__Streptococcus_salivarius.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Coprococcus.s__Coprococcus_comes.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bifidobacterium.s__Bifidobacterium_animalis.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bacteroides.s__Bacteroides_uniformis.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Roseburia.s__Roseburia_hominis.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Akkermansia.s__Akkermansia_muciniphila.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bacteroides.s__Bacteroides_intestinalis.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bifidobacterium.s__Bifidobacterium_longum.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Veillonella.s__Veillonella_parvula.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bacteroides.s__Bacteroides_dorei.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Alistipes.s__Alistipes_shahii.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Blautia.s__Ruminococcus_obeum.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Veillonella.s__Veillonella_atypica.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bacteroides.s__Bacteroides_caccae.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bacteroides.s__Bacteroides_thetaiotaomicron.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Blautia.s__Ruminococcus_torques.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_8_1_57FAA.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Flavonifractor.s__Flavonifractor_plautii.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Prevotella.s__Prevotella_copri.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Megasphaera.s__Megasphaera_micronuciformis.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Parabacteroides.s__Parabacteroides_merdae.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bacteroides.s__Bacteroides_xylanisolvens.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Parabacteroides.s__Parabacteroides_sp_D13.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Haemophilus.s__Haemophilus_parainfluenzae.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Clostridium.s__Clostridium_nexile.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Parasutterella.s__Parasutterella_excrementihominis.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_7_1_58FAA.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Dorea.s__Dorea_longicatena.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bacteroides.s__Bacteroides_stercoris.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Roseburia.s__Roseburia_intestinalis.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bifidobacterium.s__Bifidobacterium_adolescentis.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bacteroides.s__Bacteroides_salyersiae.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Anaerostipes.s__Anaerostipes_hadrus.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_1_1_57FAA.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Ruminococcus.s__Ruminococcus_bromii.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Clostridium.s__Clostridium_hathewayi.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bacteroides.s__Bacteroides_cellulosilyticus.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Veillonella.s__Veillonella_dispar.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Blautia.s__Ruminococcus_gnavus.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Coprococcus.s__Coprococcus_sp_ART55_1.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Parabacteroides.s__Parabacteroides_distasonis.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Eubacterium.s__Eubacterium_rectale.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Clostridiales_noname.s__Clostridiales_bacterium_1_7_47FAA.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Eubacterium.s__Eubacterium_eligens.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Clostridium.s__Clostridium_bolteae.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Escherichia.s__Escherichia_coli.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Roseburia.s__Roseburia_inulinivorans.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Clostridium.s__Clostridium_clostridioforme.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Dialister.s__Dialister_invisus.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Streptococcus.s__Streptococcus_parasanguinis.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Faecalibacterium.s__Faecalibacterium_prausnitzii.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Ruminococcus.s__Ruminococcus_lactaris.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Clostridium.s__Clostridium_symbiosum.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Ruminococcus.s__Ruminococcus_callidus.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Collinsella.s__Collinsella_aerofaciens.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Dorea.s__Dorea_formicigenerans.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Bacteroides.s__Bacteroides_vulgatus.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Sutterella.s__Sutterella_wadsworthensis.centroids.v0.1.1.ffn.gz /seq/ibdmdb/centos6/var/lib/humann2/chocophlan/g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_3_1_46FAA.centroids.v0.1.1.ffn.gz
+10/01/2016 08:37:01 AM - humann2.humann2 - INFO: TIMESTAMP: Completed 	custom database creation 	:	 10	 seconds
+10/01/2016 08:37:01 AM - humann2.search.nucleotide - INFO: Running bowtie2-build ........
+10/01/2016 08:37:01 AM - humann2.utilities - DEBUG: Using software: /seq/ibdmdb/centos6/bin/bowtie2-build
+10/01/2016 08:37:01 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/bowtie2-build -f /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/HSM5MD5X_custom_chocophlan_database.ffn /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/HSM5MD5X_bowtie2_index
+10/01/2016 08:57:35 AM - humann2.humann2 - INFO: TIMESTAMP: Completed 	database index 	:	 1234	 seconds
+10/01/2016 08:57:35 AM - humann2.search.nucleotide - DEBUG: Nucleotide input file is of type: fastq
+10/01/2016 08:57:35 AM - humann2.utilities - DEBUG: Using software: /seq/ibdmdb/centos6/bin/bowtie2
+10/01/2016 08:57:35 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/bowtie2 -q -x /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/HSM5MD5X_bowtie2_index -U /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X.fastq -S /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/HSM5MD5X_bowtie2_aligned.sam -p 2 --very-sensitive
+10/01/2016 09:49:07 AM - humann2.utilities - DEBUG: 33238717 reads; of these:
+  33238717 (100.00%) were unpaired; of these:
+    17977223 (54.09%) aligned 0 times
+    5883770 (17.70%) aligned exactly 1 time
+    9377724 (28.21%) aligned >1 times
+45.91% overall alignment rate
+
+10/01/2016 09:49:07 AM - humann2.humann2 - INFO: TIMESTAMP: Completed 	nucleotide alignment 	:	 3092	 seconds
+10/01/2016 10:11:35 AM - humann2.search.nucleotide - DEBUG: Total nucleotide alignments not included based on small percent identities: 821594
+10/01/2016 10:11:35 AM - humann2.search.nucleotide - DEBUG: Keeping sam file
+10/01/2016 10:11:37 AM - humann2.humann2 - INFO: TIMESTAMP: Completed 	nucleotide alignment post-processing 	:	 1350	 seconds
+10/01/2016 10:11:37 AM - humann2.humann2 - INFO: Total bugs from nucleotide alignment: 63
+10/01/2016 10:11:37 AM - humann2.humann2 - INFO: 
+g__Bifidobacterium.s__Bifidobacterium_adolescentis: 9927 hits
+g__Coprococcus.s__Coprococcus_sp_ART55_1: 71387 hits
+g__Bacteroides.s__Bacteroides_caccae: 156338 hits
+g__Clostridium.s__Clostridium_hathewayi: 70016 hits
+g__Bacteroides.s__Bacteroides_ovatus: 2008205 hits
+g__Escherichia.s__Escherichia_coli: 57413 hits
+g__Clostridiales_noname.s__Clostridiales_bacterium_1_7_47FAA: 19786 hits
+g__Bacteroides.s__Bacteroides_salyersiae: 55387 hits
+g__Bacteroides.s__Bacteroides_vulgatus: 3511383 hits
+g__Roseburia.s__Roseburia_intestinalis: 95811 hits
+g__Eubacterium.s__Eubacterium_eligens: 7756 hits
+g__Faecalibacterium.s__Faecalibacterium_prausnitzii: 1795152 hits
+g__Veillonella.s__Veillonella_parvula: 53217 hits
+g__Alistipes.s__Alistipes_shahii: 28542 hits
+g__Roseburia.s__Roseburia_inulinivorans: 71479 hits
+g__Ruminococcus.s__Ruminococcus_bromii: 4533 hits
+g__Blautia.s__Ruminococcus_gnavus: 28724 hits
+g__Bacteroides.s__Bacteroides_dorei: 608406 hits
+g__Streptococcus.s__Streptococcus_salivarius: 16137 hits
+g__Veillonella.s__Veillonella_atypica: 132866 hits
+g__Parabacteroides.s__Parabacteroides_distasonis: 231720 hits
+g__Blautia.s__Ruminococcus_torques: 79342 hits
+g__Roseburia.s__Roseburia_hominis: 24007 hits
+g__Clostridium.s__Clostridium_clostridioforme: 59111 hits
+g__Anaerostipes.s__Anaerostipes_hadrus: 43706 hits
+g__Parasutterella.s__Parasutterella_excrementihominis: 4194 hits
+g__Clostridium.s__Clostridium_bolteae: 29729 hits
+g__Bacteroides.s__Bacteroides_fragilis: 529271 hits
+g__Streptococcus.s__Streptococcus_parasanguinis: 10085 hits
+g__Alistipes.s__Alistipes_finegoldii: 22434 hits
+g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_1_1_57FAA: 4136 hits
+g__Coprococcus.s__Coprococcus_comes: 18161 hits
+g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_8_1_57FAA: 4209 hits
+g__Haemophilus.s__Haemophilus_parainfluenzae: 27940 hits
+g__Clostridium.s__Clostridium_symbiosum: 41551 hits
+g__Eubacterium.s__Eubacterium_rectale: 41439 hits
+g__Bacteroides.s__Bacteroides_xylanisolvens: 2157845 hits
+g__Clostridium.s__Clostridium_nexile: 71973 hits
+g__Dialister.s__Dialister_invisus: 2282 hits
+g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_3_1_46FAA: 5611 hits
+g__Bacteroides.s__Bacteroides_intestinalis: 116547 hits
+g__Bacteroides.s__Bacteroides_thetaiotaomicron: 128534 hits
+g__Bifidobacterium.s__Bifidobacterium_animalis: 854 hits
+g__Collinsella.s__Collinsella_aerofaciens: 11221 hits
+g__Parabacteroides.s__Parabacteroides_sp_D13: 237125 hits
+g__Prevotella.s__Prevotella_copri: 16623 hits
+g__Veillonella.s__Veillonella_dispar: 83046 hits
+g__Bacteroides.s__Bacteroides_uniformis: 578869 hits
+g__Bifidobacterium.s__Bifidobacterium_longum: 2649 hits
+g__Sutterella.s__Sutterella_wadsworthensis: 270806 hits
+g__Ruminococcus.s__Ruminococcus_lactaris: 13111 hits
+g__Bacteroides.s__Bacteroides_stercoris: 193961 hits
+g__Ruminococcus.s__Ruminococcus_callidus: 5988 hits
+g__Burkholderiales_noname.s__Burkholderiales_bacterium_1_1_47: 2974 hits
+g__Megasphaera.s__Megasphaera_micronuciformis: 1199 hits
+g__Bacteroides.s__Bacteroides_cellulosilyticus: 81679 hits
+g__Dorea.s__Dorea_longicatena: 161526 hits
+g__Flavonifractor.s__Flavonifractor_plautii: 25922 hits
+g__Blautia.s__Ruminococcus_obeum: 26941 hits
+g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_7_1_58FAA: 68870 hits
+g__Dorea.s__Dorea_formicigenerans: 46861 hits
+g__Akkermansia.s__Akkermansia_muciniphila: 79951 hits
+g__Parabacteroides.s__Parabacteroides_merdae: 73432 hits
+10/01/2016 10:11:37 AM - humann2.humann2 - INFO: Total gene families from nucleotide alignment: 134654
+10/01/2016 10:11:37 AM - humann2.humann2 - INFO: Unaligned reads after nucleotide alignment: 56.5569874433 %
+10/01/2016 10:11:38 AM - humann2.search.translated - INFO: Running diamond ........
+10/01/2016 10:11:38 AM - humann2.search.translated - INFO: Aligning to reference database: uniref90.ec_filtered.1.1.dmnd
+10/01/2016 10:11:38 AM - humann2.utilities - DEBUG: Remove file: /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/diamond_m8_hqQ9iS
+10/01/2016 10:11:38 AM - humann2.utilities - DEBUG: Using software: /seq/ibdmdb/centos6/bin/diamond
+10/01/2016 10:11:38 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/diamond blastx --query /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/HSM5MD5X_bowtie2_unaligned.fa --evalue 1.0 --threads 2 --max-target-seqs 20 --outfmt 6 --db /seq/ibdmdb/centos6/var/lib/humann2/uniref/uniref90.ec_filtered.1.1 --out /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/diamond_m8_hqQ9iS --tmpdir /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe
+10/01/2016 11:01:45 AM - humann2.utilities - DEBUG: diamond v0.8.22.84 | by Benjamin Buchfink <buchfink@gmail.com>
+Check http://github.com/bbuchfink/diamond for updates.
+
+#CPU threads: 2
+Scoring parameters: (Matrix=BLOSUM62 Lambda=0.267 K=0.041 Penalties=11/1)
+#Target sequences to report alignments for: 20
+Temporary directory: /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe
+Opening the database...  [0.004851s]
+Opening the input file...  [0.006837s]
+Opening the output file...  [0.007421s]
+Loading query sequences...  [68.0146s]
+Running complexity filter...  [247.232s]
+Building query histograms...  [11.16s]
+Allocating buffers...  [0.000765s]
+Loading reference sequences...  [3.47346s]
+Building reference histograms...  [10.5954s]
+Allocating buffers...  [8.8e-05s]
+Initializing temporary storage...  [0.043581s]
+Processing query chunk 0, reference chunk 0, shape 0, index chunk 0.
+Building reference index...  [15.701s]
+Building query index...  [17.6578s]
+Building seed filter...  [1.63008s]
+Searching alignments...  [18.1078s]
+Processing query chunk 0, reference chunk 0, shape 0, index chunk 1.
+Building reference index...  [16.3637s]
+Building query index...  [18.7207s]
+Building seed filter...  [1.64545s]
+Searching alignments...  [16.839s]
+Processing query chunk 0, reference chunk 0, shape 0, index chunk 2.
+Building reference index...  [17.2277s]
+Building query index...  [19.4975s]
+Building seed filter...  [1.65316s]
+Searching alignments...  [16.3035s]
+Processing query chunk 0, reference chunk 0, shape 0, index chunk 3.
+Building reference index...  [15.2806s]
+Building query index...  [17.5668s]
+Building seed filter...  [1.65197s]
+Searching alignments...  [15.8481s]
+Processing query chunk 0, reference chunk 0, shape 1, index chunk 0.
+Building reference index...  [15.1256s]
+Building query index...  [14.8635s]
+Building seed filter...  [1.56585s]
+Searching alignments...  [11.842s]
+Processing query chunk 0, reference chunk 0, shape 1, index chunk 1.
+Building reference index...  [17.5792s]
+Building query index...  [15.6926s]
+Building seed filter...  [1.61575s]
+Searching alignments...  [12.0028s]
+Processing query chunk 0, reference chunk 0, shape 1, index chunk 2.
+Building reference index...  [17.2689s]
+Building query index...  [16.8198s]
+Building seed filter...  [1.57123s]
+Searching alignments...  [11.4496s]
+Processing query chunk 0, reference chunk 0, shape 1, index chunk 3.
+Building reference index...  [15.127s]
+Building query index...  [14.7122s]
+Building seed filter...  [1.5757s]
+Searching alignments...  [11.6983s]
+Processing query chunk 0, reference chunk 0, shape 2, index chunk 0.
+Building reference index...  [15.0269s]
+Building query index...  [10.8877s]
+Building seed filter...  [1.4545s]
+Searching alignments...  [7.97153s]
+Processing query chunk 0, reference chunk 0, shape 2, index chunk 1.
+Building reference index...  [16.2324s]
+Building query index...  [11.6823s]
+Building seed filter...  [1.47333s]
+Searching alignments...  [7.91759s]
+Processing query chunk 0, reference chunk 0, shape 2, index chunk 2.
+Building reference index...  [16.862s]
+Building query index...  [12.2795s]
+Building seed filter...  [1.46984s]
+Searching alignments...  [7.88294s]
+Processing query chunk 0, reference chunk 0, shape 2, index chunk 3.
+Building reference index...  [15.1355s]
+Building query index...  [11.6055s]
+Building seed filter...  [1.46502s]
+Searching alignments...  [7.94601s]
+Processing query chunk 0, reference chunk 0, shape 3, index chunk 0.
+Building reference index...  [14.9493s]
+Building query index...  [9.05308s]
+Building seed filter...  [1.39952s]
+Searching alignments...  [6.39794s]
+Processing query chunk 0, reference chunk 0, shape 3, index chunk 1.
+Building reference index...  [16.1461s]
+Building query index...  [9.74401s]
+Building seed filter...  [1.38658s]
+Searching alignments...  [6.36178s]
+Processing query chunk 0, reference chunk 0, shape 3, index chunk 2.
+Building reference index...  [16.7232s]
+Building query index...  [10.0158s]
+Building seed filter...  [1.38922s]
+Searching alignments...  [6.30545s]
+Processing query chunk 0, reference chunk 0, shape 3, index chunk 3.
+Building reference index...  [14.9035s]
+Building query index...  [9.0077s]
+Building seed filter...  [1.39623s]
+Searching alignments...  [6.34802s]
+Deallocating buffers...  [0.006422s]
+Computing alignments...  [569.678s]
+Deallocating reference...  [0.003616s]
+Loading reference sequences...  [0.000931s]
+Deallocating buffers...  [0.005917s]
+Deallocating queries...  [0.015941s]
+Loading query sequences...  [52.1029s]
+Running complexity filter...  [205.323s]
+Building query histograms...  [9.32354s]
+Allocating buffers...  [0.000719s]
+Loading reference sequences...  [1.0666s]
+Building reference histograms...  [10.5721s]
+Allocating buffers...  [6.2e-05s]
+Initializing temporary storage...  [0.042009s]
+Processing query chunk 1, reference chunk 0, shape 0, index chunk 0.
+Building reference index...  [15.5037s]
+Building query index...  [14.3982s]
+Building seed filter...  [1.55663s]
+Searching alignments...  [15.399s]
+Processing query chunk 1, reference chunk 0, shape 0, index chunk 1.
+Building reference index...  [16.3988s]
+Building query index...  [15.3644s]
+Building seed filter...  [1.56076s]
+Searching alignments...  [14.3345s]
+Processing query chunk 1, reference chunk 0, shape 0, index chunk 2.
+Building reference index...  [17.1465s]
+Building query index...  [16.0469s]
+Building seed filter...  [1.57502s]
+Searching alignments...  [13.9632s]
+Processing query chunk 1, reference chunk 0, shape 0, index chunk 3.
+Building reference index...  [15.2723s]
+Building query index...  [17.5587s]
+Building seed filter...  [2.15405s]
+Searching alignments...  [13.6567s]
+Processing query chunk 1, reference chunk 0, shape 1, index chunk 0.
+Building reference index...  [15.2616s]
+Building query index...  [12.1145s]
+Building seed filter...  [1.49786s]
+Searching alignments...  [10.2331s]
+Processing query chunk 1, reference chunk 0, shape 1, index chunk 1.
+Building reference index...  [16.3679s]
+Building query index...  [14.738s]
+Building seed filter...  [1.4702s]
+Searching alignments...  [10.8933s]
+Processing query chunk 1, reference chunk 0, shape 1, index chunk 2.
+Building reference index...  [19.5588s]
+Building query index...  [13.5083s]
+Building seed filter...  [1.50079s]
+Searching alignments...  [9.98659s]
+Processing query chunk 1, reference chunk 0, shape 1, index chunk 3.
+Building reference index...  [15.2551s]
+Building query index...  [12.3089s]
+Building seed filter...  [1.50275s]
+Searching alignments...  [10.1038s]
+Processing query chunk 1, reference chunk 0, shape 2, index chunk 0.
+Building reference index...  [15.0535s]
+Building query index...  [9.00901s]
+Building seed filter...  [1.40959s]
+Searching alignments...  [6.9463s]
+Processing query chunk 1, reference chunk 0, shape 2, index chunk 1.
+Building reference index...  [16.2269s]
+Building query index...  [9.64391s]
+Building seed filter...  [1.40489s]
+Searching alignments...  [6.83384s]
+Processing query chunk 1, reference chunk 0, shape 2, index chunk 2.
+Building reference index...  [19.3748s]
+Building query index...  [14.2188s]
+Building seed filter...  [1.8992s]
+Searching alignments...  [7.1418s]
+Processing query chunk 1, reference chunk 0, shape 2, index chunk 3.
+Building reference index...  [15.9022s]
+Building query index...  [12.9656s]
+Building seed filter...  [1.46557s]
+Searching alignments...  [6.94743s]
+Processing query chunk 1, reference chunk 0, shape 3, index chunk 0.
+Building reference index...  [18.3249s]
+Building query index...  [8.68533s]
+Building seed filter...  [2.06661s]
+Searching alignments...  [6.05203s]
+Processing query chunk 1, reference chunk 0, shape 3, index chunk 1.
+Building reference index...  [18.2617s]
+Building query index...  [11.2426s]
+Building seed filter...  [1.5261s]
+Searching alignments...  [5.62341s]
+Processing query chunk 1, reference chunk 0, shape 3, index chunk 2.
+Building reference index...  [20.7556s]
+Building query index...  [11.3894s]
+Building seed filter...  [1.37463s]
+Searching alignments...  [5.64118s]
+Processing query chunk 1, reference chunk 0, shape 3, index chunk 3.
+Building reference index...  [15.4461s]
+Building query index...  [7.95196s]
+Building seed filter...  [1.35694s]
+Searching alignments...  [5.74284s]
+Deallocating buffers...  [0.006334s]
+Computing alignments...  [501.493s]
+Deallocating reference...  [0.003032s]
+Loading reference sequences...  [0.00051s]
+Deallocating buffers...  [0.005368s]
+Deallocating queries...  [0.012863s]
+Loading query sequences...  [2.3e-05s]
+Closing the output file...  [0.055099s]
+Closing the database file...  [1.3e-05s]
+Total time = 3007.37s
+Reported 23814238 pairwise alignments, 23850532 HSSPs.
+2429557 queries aligned.
+
+10/01/2016 11:01:45 AM - humann2.utilities - DEBUG: Using software: /bin/cat
+10/01/2016 11:01:45 AM - humann2.utilities - INFO: Execute command: /bin/cat /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/diamond_m8_hqQ9iS
+10/01/2016 11:02:06 AM - humann2.humann2 - INFO: TIMESTAMP: Completed 	translated alignment 	:	 3029	 seconds
+10/01/2016 11:11:33 AM - humann2.search.blastx_coverage - INFO: Total alignments without coverage information: 0
+10/01/2016 11:11:33 AM - humann2.search.blastx_coverage - INFO: Total proteins in blastx output: 77095
+10/01/2016 11:11:33 AM - humann2.search.blastx_coverage - INFO: Total proteins without lengths: 0
+10/01/2016 11:11:33 AM - humann2.search.blastx_coverage - INFO: Proteins with coverage greater than threshold (50.0): 8002
+10/01/2016 11:22:41 AM - humann2.utilities - DEBUG: Total alignments where percent identity is not a number: 0
+10/01/2016 11:22:41 AM - humann2.utilities - DEBUG: Total alignments where alignment length is not a number: 0
+10/01/2016 11:22:41 AM - humann2.utilities - DEBUG: Total alignments where E-value is not a number: 0
+10/01/2016 11:22:41 AM - humann2.utilities - DEBUG: Total translated alignments not included based on large e-value: 1309
+10/01/2016 11:22:41 AM - humann2.utilities - DEBUG: Total translated alignments not included based on small percent identity: 18826754
+10/01/2016 11:22:41 AM - humann2.utilities - DEBUG: Total translated alignments not included based on small query coverage: 18477332
+10/01/2016 11:22:41 AM - humann2.search.translated - DEBUG: Total translated alignments not included based on small subject coverage value: 407287
+10/01/2016 11:26:00 AM - humann2.humann2 - INFO: TIMESTAMP: Completed 	translated alignment post-processing 	:	 1434	 seconds
+10/01/2016 11:26:00 AM - humann2.humann2 - INFO: Total bugs after translated alignment: 64
+10/01/2016 11:26:00 AM - humann2.humann2 - INFO: 
+g__Bifidobacterium.s__Bifidobacterium_adolescentis: 9927 hits
+g__Coprococcus.s__Coprococcus_sp_ART55_1: 71387 hits
+g__Bacteroides.s__Bacteroides_caccae: 156338 hits
+g__Clostridium.s__Clostridium_hathewayi: 70016 hits
+g__Bacteroides.s__Bacteroides_ovatus: 2008205 hits
+g__Escherichia.s__Escherichia_coli: 57413 hits
+g__Clostridiales_noname.s__Clostridiales_bacterium_1_7_47FAA: 19786 hits
+g__Bacteroides.s__Bacteroides_salyersiae: 55387 hits
+g__Bacteroides.s__Bacteroides_vulgatus: 3511383 hits
+g__Roseburia.s__Roseburia_intestinalis: 95811 hits
+g__Eubacterium.s__Eubacterium_eligens: 7756 hits
+g__Faecalibacterium.s__Faecalibacterium_prausnitzii: 1795152 hits
+g__Veillonella.s__Veillonella_parvula: 53217 hits
+g__Alistipes.s__Alistipes_shahii: 28542 hits
+g__Roseburia.s__Roseburia_inulinivorans: 71479 hits
+g__Ruminococcus.s__Ruminococcus_bromii: 4533 hits
+g__Blautia.s__Ruminococcus_gnavus: 28724 hits
+g__Bacteroides.s__Bacteroides_dorei: 608406 hits
+g__Streptococcus.s__Streptococcus_salivarius: 16137 hits
+g__Veillonella.s__Veillonella_atypica: 132866 hits
+g__Parabacteroides.s__Parabacteroides_distasonis: 231720 hits
+g__Blautia.s__Ruminococcus_torques: 79342 hits
+g__Roseburia.s__Roseburia_hominis: 24007 hits
+g__Clostridium.s__Clostridium_clostridioforme: 59111 hits
+g__Anaerostipes.s__Anaerostipes_hadrus: 43706 hits
+g__Parasutterella.s__Parasutterella_excrementihominis: 4194 hits
+g__Clostridium.s__Clostridium_bolteae: 29729 hits
+g__Bacteroides.s__Bacteroides_fragilis: 529271 hits
+g__Streptococcus.s__Streptococcus_parasanguinis: 10085 hits
+g__Alistipes.s__Alistipes_finegoldii: 22434 hits
+g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_1_1_57FAA: 4136 hits
+g__Coprococcus.s__Coprococcus_comes: 18161 hits
+g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_8_1_57FAA: 4209 hits
+g__Haemophilus.s__Haemophilus_parainfluenzae: 27940 hits
+g__Clostridium.s__Clostridium_symbiosum: 41551 hits
+g__Eubacterium.s__Eubacterium_rectale: 41439 hits
+g__Bacteroides.s__Bacteroides_xylanisolvens: 2157845 hits
+g__Clostridium.s__Clostridium_nexile: 71973 hits
+g__Dialister.s__Dialister_invisus: 2282 hits
+g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_3_1_46FAA: 5611 hits
+g__Bacteroides.s__Bacteroides_intestinalis: 116547 hits
+g__Bacteroides.s__Bacteroides_thetaiotaomicron: 128534 hits
+g__Bifidobacterium.s__Bifidobacterium_animalis: 854 hits
+g__Collinsella.s__Collinsella_aerofaciens: 11221 hits
+g__Parabacteroides.s__Parabacteroides_sp_D13: 237125 hits
+g__Prevotella.s__Prevotella_copri: 16623 hits
+g__Veillonella.s__Veillonella_dispar: 83046 hits
+g__Bacteroides.s__Bacteroides_uniformis: 578869 hits
+g__Bifidobacterium.s__Bifidobacterium_longum: 2649 hits
+g__Sutterella.s__Sutterella_wadsworthensis: 270806 hits
+g__Ruminococcus.s__Ruminococcus_lactaris: 13111 hits
+g__Bacteroides.s__Bacteroides_stercoris: 193961 hits
+g__Ruminococcus.s__Ruminococcus_callidus: 5988 hits
+g__Burkholderiales_noname.s__Burkholderiales_bacterium_1_1_47: 2974 hits
+g__Megasphaera.s__Megasphaera_micronuciformis: 1199 hits
+g__Bacteroides.s__Bacteroides_cellulosilyticus: 81679 hits
+unclassified: 445941 hits
+g__Dorea.s__Dorea_longicatena: 161526 hits
+g__Flavonifractor.s__Flavonifractor_plautii: 25922 hits
+g__Blautia.s__Ruminococcus_obeum: 26941 hits
+g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_7_1_58FAA: 68870 hits
+g__Dorea.s__Dorea_formicigenerans: 46861 hits
+g__Akkermansia.s__Akkermansia_muciniphila: 79951 hits
+g__Parabacteroides.s__Parabacteroides_merdae: 73432 hits
+10/01/2016 11:26:00 AM - humann2.humann2 - INFO: Total gene families after translated alignment: 140897
+10/01/2016 11:26:00 AM - humann2.humann2 - INFO: Unaligned reads after translated alignment: 49.2621090038 %
+10/01/2016 11:26:03 AM - humann2.humann2 - INFO: Computing gene families ...
+10/01/2016 11:26:03 AM - humann2.quantify.families - DEBUG: Compute gene families
+10/01/2016 11:26:44 AM - humann2.store - INFO: 
+Total gene families  : 140897
+g__Bifidobacterium.s__Bifidobacterium_adolescentis : 1339 gene families
+g__Coprococcus.s__Coprococcus_sp_ART55_1 : 1827 gene families
+g__Bacteroides.s__Bacteroides_caccae : 3755 gene families
+g__Clostridium.s__Clostridium_hathewayi : 5134 gene families
+g__Bacteroides.s__Bacteroides_ovatus : 7863 gene families
+g__Escherichia.s__Escherichia_coli : 7723 gene families
+g__Clostridiales_noname.s__Clostridiales_bacterium_1_7_47FAA : 2595 gene families
+g__Bacteroides.s__Bacteroides_salyersiae : 1773 gene families
+g__Bacteroides.s__Bacteroides_vulgatus : 4860 gene families
+g__Roseburia.s__Roseburia_intestinalis : 4100 gene families
+g__Eubacterium.s__Eubacterium_eligens : 1109 gene families
+g__Faecalibacterium.s__Faecalibacterium_prausnitzii : 8135 gene families
+g__Veillonella.s__Veillonella_parvula : 1930 gene families
+g__Alistipes.s__Alistipes_shahii : 1740 gene families
+g__Roseburia.s__Roseburia_inulinivorans : 3073 gene families
+g__Ruminococcus.s__Ruminococcus_bromii : 758 gene families
+g__Blautia.s__Ruminococcus_gnavus : 2299 gene families
+g__Bacteroides.s__Bacteroides_dorei : 5139 gene families
+g__Streptococcus.s__Streptococcus_salivarius : 1877 gene families
+g__Veillonella.s__Veillonella_atypica : 1938 gene families
+g__Parabacteroides.s__Parabacteroides_distasonis : 4244 gene families
+g__Blautia.s__Ruminococcus_torques : 2598 gene families
+g__Roseburia.s__Roseburia_hominis : 1551 gene families
+g__Clostridium.s__Clostridium_clostridioforme : 5262 gene families
+g__Anaerostipes.s__Anaerostipes_hadrus : 2079 gene families
+g__Parasutterella.s__Parasutterella_excrementihominis : 1099 gene families
+g__Clostridium.s__Clostridium_bolteae : 3300 gene families
+g__Bacteroides.s__Bacteroides_fragilis : 6116 gene families
+g__Streptococcus.s__Streptococcus_parasanguinis : 1741 gene families
+g__Alistipes.s__Alistipes_finegoldii : 1889 gene families
+g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_1_1_57FAA : 463 gene families
+g__Coprococcus.s__Coprococcus_comes : 1338 gene families
+g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_8_1_57FAA : 471 gene families
+g__Haemophilus.s__Haemophilus_parainfluenzae : 1834 gene families
+g__Clostridium.s__Clostridium_symbiosum : 3237 gene families
+g__Eubacterium.s__Eubacterium_rectale : 2514 gene families
+g__Bacteroides.s__Bacteroides_xylanisolvens : 5537 gene families
+g__Clostridium.s__Clostridium_nexile : 2814 gene families
+g__Dialister.s__Dialister_invisus : 677 gene families
+g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_3_1_46FAA : 496 gene families
+g__Bacteroides.s__Bacteroides_intestinalis : 2914 gene families
+g__Bacteroides.s__Bacteroides_thetaiotaomicron : 4117 gene families
+g__Bifidobacterium.s__Bifidobacterium_animalis : 322 gene families
+g__Collinsella.s__Collinsella_aerofaciens : 1496 gene families
+g__Parabacteroides.s__Parabacteroides_sp_D13 : 3913 gene families
+g__Prevotella.s__Prevotella_copri : 1716 gene families
+g__Veillonella.s__Veillonella_dispar : 1566 gene families
+g__Bacteroides.s__Bacteroides_uniformis : 4833 gene families
+g__Bifidobacterium.s__Bifidobacterium_longum : 686 gene families
+g__Sutterella.s__Sutterella_wadsworthensis : 2002 gene families
+g__Ruminococcus.s__Ruminococcus_lactaris : 1287 gene families
+g__Bacteroides.s__Bacteroides_stercoris : 3315 gene families
+g__Ruminococcus.s__Ruminococcus_callidus : 808 gene families
+g__Burkholderiales_noname.s__Burkholderiales_bacterium_1_1_47 : 1032 gene families
+g__Megasphaera.s__Megasphaera_micronuciformis : 430 gene families
+g__Bacteroides.s__Bacteroides_cellulosilyticus : 2364 gene families
+unclassified : 8002 gene families
+g__Dorea.s__Dorea_longicatena : 1777 gene families
+g__Flavonifractor.s__Flavonifractor_plautii : 3164 gene families
+g__Blautia.s__Ruminococcus_obeum : 1867 gene families
+g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_7_1_58FAA : 4369 gene families
+g__Dorea.s__Dorea_formicigenerans : 2451 gene families
+g__Akkermansia.s__Akkermansia_muciniphila : 1938 gene families
+g__Parabacteroides.s__Parabacteroides_merdae : 2666 gene families
+10/01/2016 11:27:44 AM - humann2.humann2 - INFO: TIMESTAMP: Completed 	computing gene families 	:	 104	 seconds
+10/01/2016 11:27:52 AM - humann2.humann2 - INFO: Computing pathways abundance and coverage ...
+10/01/2016 11:27:52 AM - humann2.quantify.modules - DEBUG: Write flat reactions to pathways file for Minpath
+10/01/2016 11:27:52 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: all
+10/01/2016 11:27:54 AM - humann2.quantify.modules - INFO: Run MinPath on all
+10/01/2016 11:27:54 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Clostridium.s__Clostridium_clostridioforme
+10/01/2016 11:27:56 AM - humann2.quantify.modules - INFO: Run MinPath on g__Clostridium.s__Clostridium_clostridioforme
+10/01/2016 11:27:56 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Coprococcus.s__Coprococcus_sp_ART55_1
+10/01/2016 11:27:57 AM - humann2.quantify.modules - INFO: Run MinPath on g__Coprococcus.s__Coprococcus_sp_ART55_1
+10/01/2016 11:27:57 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bacteroides.s__Bacteroides_caccae
+10/01/2016 11:27:58 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bacteroides.s__Bacteroides_caccae
+10/01/2016 11:27:58 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Clostridium.s__Clostridium_hathewayi
+10/01/2016 11:28:00 AM - humann2.quantify.modules - INFO: Run MinPath on g__Clostridium.s__Clostridium_hathewayi
+10/01/2016 11:28:00 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bacteroides.s__Bacteroides_ovatus
+10/01/2016 11:28:02 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bacteroides.s__Bacteroides_ovatus
+10/01/2016 11:28:02 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Escherichia.s__Escherichia_coli
+10/01/2016 11:28:03 AM - humann2.quantify.modules - INFO: Run MinPath on g__Escherichia.s__Escherichia_coli
+10/01/2016 11:28:03 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Clostridiales_noname.s__Clostridiales_bacterium_1_7_47FAA
+10/01/2016 11:28:05 AM - humann2.quantify.modules - INFO: Run MinPath on g__Clostridiales_noname.s__Clostridiales_bacterium_1_7_47FAA
+10/01/2016 11:28:05 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bacteroides.s__Bacteroides_salyersiae
+10/01/2016 11:28:06 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bacteroides.s__Bacteroides_salyersiae
+10/01/2016 11:28:06 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bacteroides.s__Bacteroides_vulgatus
+10/01/2016 11:28:08 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bacteroides.s__Bacteroides_vulgatus
+10/01/2016 11:28:08 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Roseburia.s__Roseburia_intestinalis
+10/01/2016 11:28:09 AM - humann2.quantify.modules - INFO: Run MinPath on g__Roseburia.s__Roseburia_intestinalis
+10/01/2016 11:28:09 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Eubacterium.s__Eubacterium_eligens
+10/01/2016 11:28:10 AM - humann2.quantify.modules - INFO: Run MinPath on g__Eubacterium.s__Eubacterium_eligens
+10/01/2016 11:28:10 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Faecalibacterium.s__Faecalibacterium_prausnitzii
+10/01/2016 11:28:12 AM - humann2.quantify.modules - INFO: Run MinPath on g__Faecalibacterium.s__Faecalibacterium_prausnitzii
+10/01/2016 11:28:12 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Veillonella.s__Veillonella_parvula
+10/01/2016 11:28:13 AM - humann2.quantify.modules - INFO: Run MinPath on g__Veillonella.s__Veillonella_parvula
+10/01/2016 11:28:13 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Alistipes.s__Alistipes_shahii
+10/01/2016 11:28:14 AM - humann2.quantify.modules - INFO: Run MinPath on g__Alistipes.s__Alistipes_shahii
+10/01/2016 11:28:14 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Roseburia.s__Roseburia_inulinivorans
+10/01/2016 11:28:15 AM - humann2.quantify.modules - INFO: Run MinPath on g__Roseburia.s__Roseburia_inulinivorans
+10/01/2016 11:28:15 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Ruminococcus.s__Ruminococcus_bromii
+10/01/2016 11:28:16 AM - humann2.quantify.modules - INFO: Run MinPath on g__Ruminococcus.s__Ruminococcus_bromii
+10/01/2016 11:28:16 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Blautia.s__Ruminococcus_gnavus
+10/01/2016 11:28:17 AM - humann2.quantify.modules - INFO: Run MinPath on g__Blautia.s__Ruminococcus_gnavus
+10/01/2016 11:28:17 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bacteroides.s__Bacteroides_dorei
+10/01/2016 11:28:19 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bacteroides.s__Bacteroides_dorei
+10/01/2016 11:28:19 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Streptococcus.s__Streptococcus_salivarius
+10/01/2016 11:28:20 AM - humann2.quantify.modules - INFO: Run MinPath on g__Streptococcus.s__Streptococcus_salivarius
+10/01/2016 11:28:20 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Veillonella.s__Veillonella_atypica
+10/01/2016 11:28:21 AM - humann2.quantify.modules - INFO: Run MinPath on g__Veillonella.s__Veillonella_atypica
+10/01/2016 11:28:21 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Parabacteroides.s__Parabacteroides_distasonis
+10/01/2016 11:28:23 AM - humann2.quantify.modules - INFO: Run MinPath on g__Parabacteroides.s__Parabacteroides_distasonis
+10/01/2016 11:28:23 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Blautia.s__Ruminococcus_torques
+10/01/2016 11:28:24 AM - humann2.quantify.modules - INFO: Run MinPath on g__Blautia.s__Ruminococcus_torques
+10/01/2016 11:28:24 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Roseburia.s__Roseburia_hominis
+10/01/2016 11:28:25 AM - humann2.quantify.modules - INFO: Run MinPath on g__Roseburia.s__Roseburia_hominis
+10/01/2016 11:28:25 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bifidobacterium.s__Bifidobacterium_adolescentis
+10/01/2016 11:28:26 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bifidobacterium.s__Bifidobacterium_adolescentis
+10/01/2016 11:28:26 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Anaerostipes.s__Anaerostipes_hadrus
+10/01/2016 11:28:28 AM - humann2.quantify.modules - INFO: Run MinPath on g__Anaerostipes.s__Anaerostipes_hadrus
+10/01/2016 11:28:28 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Parasutterella.s__Parasutterella_excrementihominis
+10/01/2016 11:28:29 AM - humann2.quantify.modules - INFO: Run MinPath on g__Parasutterella.s__Parasutterella_excrementihominis
+10/01/2016 11:28:29 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Clostridium.s__Clostridium_bolteae
+10/01/2016 11:28:30 AM - humann2.quantify.modules - INFO: Run MinPath on g__Clostridium.s__Clostridium_bolteae
+10/01/2016 11:28:30 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bacteroides.s__Bacteroides_fragilis
+10/01/2016 11:28:32 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bacteroides.s__Bacteroides_fragilis
+10/01/2016 11:28:32 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Streptococcus.s__Streptococcus_parasanguinis
+10/01/2016 11:28:33 AM - humann2.quantify.modules - INFO: Run MinPath on g__Streptococcus.s__Streptococcus_parasanguinis
+10/01/2016 11:28:33 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Alistipes.s__Alistipes_finegoldii
+10/01/2016 11:28:34 AM - humann2.quantify.modules - INFO: Run MinPath on g__Alistipes.s__Alistipes_finegoldii
+10/01/2016 11:28:34 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Blautia.s__Ruminococcus_obeum
+10/01/2016 11:28:35 AM - humann2.quantify.modules - INFO: Run MinPath on g__Blautia.s__Ruminococcus_obeum
+10/01/2016 11:28:35 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Coprococcus.s__Coprococcus_comes
+10/01/2016 11:28:36 AM - humann2.quantify.modules - INFO: Run MinPath on g__Coprococcus.s__Coprococcus_comes
+10/01/2016 11:28:36 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_8_1_57FAA
+10/01/2016 11:28:37 AM - humann2.quantify.modules - INFO: Run MinPath on g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_8_1_57FAA
+10/01/2016 11:28:37 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Haemophilus.s__Haemophilus_parainfluenzae
+10/01/2016 11:28:38 AM - humann2.quantify.modules - INFO: Run MinPath on g__Haemophilus.s__Haemophilus_parainfluenzae
+10/01/2016 11:28:38 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Megasphaera.s__Megasphaera_micronuciformis
+10/01/2016 11:28:39 AM - humann2.quantify.modules - INFO: Run MinPath on g__Megasphaera.s__Megasphaera_micronuciformis
+10/01/2016 11:28:39 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Eubacterium.s__Eubacterium_rectale
+10/01/2016 11:28:40 AM - humann2.quantify.modules - INFO: Run MinPath on g__Eubacterium.s__Eubacterium_rectale
+10/01/2016 11:28:41 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bacteroides.s__Bacteroides_xylanisolvens
+10/01/2016 11:28:42 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bacteroides.s__Bacteroides_xylanisolvens
+10/01/2016 11:28:42 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Clostridium.s__Clostridium_nexile
+10/01/2016 11:28:44 AM - humann2.quantify.modules - INFO: Run MinPath on g__Clostridium.s__Clostridium_nexile
+10/01/2016 11:28:44 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Dialister.s__Dialister_invisus
+10/01/2016 11:28:44 AM - humann2.quantify.modules - INFO: Run MinPath on g__Dialister.s__Dialister_invisus
+10/01/2016 11:28:44 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_3_1_46FAA
+10/01/2016 11:28:46 AM - humann2.quantify.modules - INFO: Run MinPath on g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_3_1_46FAA
+10/01/2016 11:28:46 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bacteroides.s__Bacteroides_intestinalis
+10/01/2016 11:28:47 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bacteroides.s__Bacteroides_intestinalis
+10/01/2016 11:28:47 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bacteroides.s__Bacteroides_thetaiotaomicron
+10/01/2016 11:28:49 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bacteroides.s__Bacteroides_thetaiotaomicron
+10/01/2016 11:28:49 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bifidobacterium.s__Bifidobacterium_animalis
+10/01/2016 11:28:50 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bifidobacterium.s__Bifidobacterium_animalis
+10/01/2016 11:28:50 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Collinsella.s__Collinsella_aerofaciens
+10/01/2016 11:28:52 AM - humann2.quantify.modules - INFO: Run MinPath on g__Collinsella.s__Collinsella_aerofaciens
+10/01/2016 11:28:52 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Parabacteroides.s__Parabacteroides_sp_D13
+10/01/2016 11:28:53 AM - humann2.quantify.modules - INFO: Run MinPath on g__Parabacteroides.s__Parabacteroides_sp_D13
+10/01/2016 11:28:53 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Prevotella.s__Prevotella_copri
+10/01/2016 11:28:55 AM - humann2.quantify.modules - INFO: Run MinPath on g__Prevotella.s__Prevotella_copri
+10/01/2016 11:28:55 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Veillonella.s__Veillonella_dispar
+10/01/2016 11:28:56 AM - humann2.quantify.modules - INFO: Run MinPath on g__Veillonella.s__Veillonella_dispar
+10/01/2016 11:28:56 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bacteroides.s__Bacteroides_uniformis
+10/01/2016 11:28:57 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bacteroides.s__Bacteroides_uniformis
+10/01/2016 11:28:57 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bifidobacterium.s__Bifidobacterium_longum
+10/01/2016 11:28:58 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bifidobacterium.s__Bifidobacterium_longum
+10/01/2016 11:28:58 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Sutterella.s__Sutterella_wadsworthensis
+10/01/2016 11:28:59 AM - humann2.quantify.modules - INFO: Run MinPath on g__Sutterella.s__Sutterella_wadsworthensis
+10/01/2016 11:28:59 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Ruminococcus.s__Ruminococcus_lactaris
+10/01/2016 11:29:00 AM - humann2.quantify.modules - INFO: Run MinPath on g__Ruminococcus.s__Ruminococcus_lactaris
+10/01/2016 11:29:00 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bacteroides.s__Bacteroides_stercoris
+10/01/2016 11:29:02 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bacteroides.s__Bacteroides_stercoris
+10/01/2016 11:29:02 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Ruminococcus.s__Ruminococcus_callidus
+10/01/2016 11:29:03 AM - humann2.quantify.modules - INFO: Run MinPath on g__Ruminococcus.s__Ruminococcus_callidus
+10/01/2016 11:29:03 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Burkholderiales_noname.s__Burkholderiales_bacterium_1_1_47
+10/01/2016 11:29:04 AM - humann2.quantify.modules - INFO: Run MinPath on g__Burkholderiales_noname.s__Burkholderiales_bacterium_1_1_47
+10/01/2016 11:29:04 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Bacteroides.s__Bacteroides_cellulosilyticus
+10/01/2016 11:29:05 AM - humann2.quantify.modules - INFO: Run MinPath on g__Bacteroides.s__Bacteroides_cellulosilyticus
+10/01/2016 11:29:05 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: unclassified
+10/01/2016 11:29:07 AM - humann2.quantify.modules - INFO: Run MinPath on unclassified
+10/01/2016 11:29:07 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Dorea.s__Dorea_longicatena
+10/01/2016 11:29:08 AM - humann2.quantify.modules - INFO: Run MinPath on g__Dorea.s__Dorea_longicatena
+10/01/2016 11:29:08 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Flavonifractor.s__Flavonifractor_plautii
+10/01/2016 11:29:09 AM - humann2.quantify.modules - INFO: Run MinPath on g__Flavonifractor.s__Flavonifractor_plautii
+10/01/2016 11:29:09 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_1_1_57FAA
+10/01/2016 11:29:10 AM - humann2.quantify.modules - INFO: Run MinPath on g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_1_1_57FAA
+10/01/2016 11:29:10 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Clostridium.s__Clostridium_symbiosum
+10/01/2016 11:29:11 AM - humann2.quantify.modules - INFO: Run MinPath on g__Clostridium.s__Clostridium_symbiosum
+10/01/2016 11:29:11 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Dorea.s__Dorea_formicigenerans
+10/01/2016 11:29:13 AM - humann2.quantify.modules - INFO: Run MinPath on g__Dorea.s__Dorea_formicigenerans
+10/01/2016 11:29:13 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Akkermansia.s__Akkermansia_muciniphila
+10/01/2016 11:29:14 AM - humann2.quantify.modules - INFO: Run MinPath on g__Akkermansia.s__Akkermansia_muciniphila
+10/01/2016 11:29:14 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Parabacteroides.s__Parabacteroides_merdae
+10/01/2016 11:29:15 AM - humann2.quantify.modules - INFO: Run MinPath on g__Parabacteroides.s__Parabacteroides_merdae
+10/01/2016 11:29:15 AM - humann2.quantify.modules - INFO: Compute reaction scores for bug: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_7_1_58FAA
+10/01/2016 11:29:17 AM - humann2.quantify.modules - INFO: Run MinPath on g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_7_1_58FAA
+10/01/2016 11:29:17 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:17 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:17 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpT0v8PP -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpVJroEs -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpHrNpOl -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpPXZ5lC
+10/01/2016 11:29:17 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmplaRlnP -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmplg83bB -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpqfNVdl -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpAJHaGZ
+10/01/2016 11:29:19 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:19 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpJgF1_J -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpDd6uHq -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpmF5M97 -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpbjTEpR
+10/01/2016 11:29:20 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:20 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp58Q1yO -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpaHSHr_ -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmprsQSMm -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpNJMRcD
+10/01/2016 11:29:20 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:20 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpHNkjc7 -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpCdVyMU -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpI9BIRX -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpIAw9hn
+10/01/2016 11:29:22 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:22 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp_4C59w -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpzVRSmD -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpzUK1J1 -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpbWCnDo
+10/01/2016 11:29:22 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:22 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpJmGcXv -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpRbcpq_ -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpb3SxId -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpfpurfz
+10/01/2016 11:29:24 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:24 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpCBBEOi -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmphHryTm -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpRVjj2V -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpTlpVcv
+10/01/2016 11:29:25 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:25 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpDfXeoa -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmptXp8Lw -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpbygPdH -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp8NYK_3
+10/01/2016 11:29:26 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:26 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpj2P6uX -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpaeBnIH -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpqQ15Mj -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpqt5eZu
+10/01/2016 11:29:27 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:27 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpW2Wtux -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpiZNI9e -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpKUqqnY -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmplaBwHd
+10/01/2016 11:29:27 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:27 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpMzWEMr -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp_zEnEM -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpngn6R1 -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp1IBzPK
+10/01/2016 11:29:29 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:29 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpmBoAk9 -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpwRwsYG -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpzTHyD9 -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpDFSXPj
+10/01/2016 11:29:29 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:29 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpfNJXKq -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpvJHQVX -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpT94PsP -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpx49y72
+10/01/2016 11:29:31 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:31 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp2VWf6D -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpMfNPA6 -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpZwkpko -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpNSQkjF
+10/01/2016 11:29:31 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:31 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpx0wdRP -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpzkMDVs -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpBocCrm -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpKyWyLc
+10/01/2016 11:29:32 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:32 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpZNOL9m -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyn6O_g -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmptVJQeU -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp95Mdtl
+10/01/2016 11:29:33 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:33 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpdnopeZ -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpm_cgX9 -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpTkPaq1 -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmphX5Rmi
+10/01/2016 11:29:34 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:34 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpJV9BM_ -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpGzhSJB -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpqxlsEq -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpwZ4Izu
+10/01/2016 11:29:35 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:35 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpLsKw57 -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpj3wuCZ -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpR3Fjw7 -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpzvbAMr
+10/01/2016 11:29:36 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:36 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpEA0OtC -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpY4EpUU -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpifMGDw -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpRBqF7S
+10/01/2016 11:29:36 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:36 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpM4pzf6 -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpOM4GTd -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpHjJ2c8 -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpIL8ogY
+10/01/2016 11:29:38 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:38 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpFOavy3 -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp685CI_ -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp_0kAEo -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpWLToZI
+10/01/2016 11:29:38 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:38 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp_EfdGW -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpkbe0bR -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpWHQ6fU -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpkKsLmp
+10/01/2016 11:29:40 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:40 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpuAck1j -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpnic6OO -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpV8AY9n -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpbWDKvQ
+10/01/2016 11:29:40 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:40 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp9j4z00 -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpFCukc7 -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpigViCd -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpMp9gqn
+10/01/2016 11:29:41 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:41 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpfeu59X -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpFCh5CD -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpfwS5EP -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp8BIrGh
+10/01/2016 11:29:42 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:42 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpRx13Im -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpLNC4L_ -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp8cvrwB -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpDFCMfd
+10/01/2016 11:29:43 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:43 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpZlpVKM -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpTns1cq -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp0HcbKz -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpncjvie
+10/01/2016 11:29:44 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:44 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpvxA_Ut -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpJgBll4 -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpJz06H6 -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpbVm1lK
+10/01/2016 11:29:45 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:45 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpTmTI0u -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpJtSsUi -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp43IIm3 -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpbwiH1F
+10/01/2016 11:29:45 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:45 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpwFeoZy -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpNHg2Kk -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpqfdVQ8 -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpDIbtJm
+10/01/2016 11:29:47 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:47 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpuCcnSQ -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpfIJkpI -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpnz20f5 -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpiL53rv
+10/01/2016 11:29:48 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:48 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpRqUTAr -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpBge6lX -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpYhpu1t -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpHIC_Qw
+10/01/2016 11:29:48 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:48 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmprKJ1FJ -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpn8Y6xo -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpZfUWrW -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpmZWwd6
+10/01/2016 11:29:50 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:50 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpYGnePG -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp1u198e -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpuBO0K1 -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpJq8cp2
+10/01/2016 11:29:51 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:51 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpqv8u6T -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpLifeIE -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpFFhQpc -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpbNZf5R
+10/01/2016 11:29:51 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:51 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpwiEpVQ -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpbsC5DH -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpmc10sJ -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpsnlL7A
+10/01/2016 11:29:53 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:53 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpRDm8jt -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmplHmPC4 -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp1Rs5Yr -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpcjAW4A
+10/01/2016 11:29:53 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:53 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpIolcF8 -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpliXQP6 -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmprCmXiM -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyr9hXy
+10/01/2016 11:29:55 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:55 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp3SDLRd -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpC_X5yn -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp8PYHUv -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpBcCkFo
+10/01/2016 11:29:55 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:55 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpqQdK_y -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpJ7EDlH -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp5kX9BV -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpsTO2Mg
+10/01/2016 11:29:56 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:56 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpzQRpHM -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp1kCRtJ -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpo6i86w -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpD0cAV0
+10/01/2016 11:29:57 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:57 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpGVk5KS -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp5Ci2j1 -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpbqV0Gu -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp49jjhw
+10/01/2016 11:29:58 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:58 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmppfxpOH -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpMya67y -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpbsEmen -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpIR95LV
+10/01/2016 11:29:59 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:29:59 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmplmT33J -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpaKHAQ4 -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpfQvYhC -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpOdccCv
+10/01/2016 11:30:00 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:00 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp9eoT1e -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpmr1pfF -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpgPEfIF -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmppsKmWa
+10/01/2016 11:30:00 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:00 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp07Z1JX -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpQSnfOj -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp3geN0N -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmptOf97z
+10/01/2016 11:30:02 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:02 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpLTfedJ -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp4zlvsj -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpXX2pWe -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpD5TVMK
+10/01/2016 11:30:03 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:03 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpLs7KvZ -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpxGBR6_ -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp3uU4YA -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpo5Sokx
+10/01/2016 11:30:04 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:04 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpHlkF4i -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmprAkBQg -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpuSlnqZ -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpuCwq1Q
+10/01/2016 11:30:05 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:05 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmprsrWll -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpj4mhsD -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpnyPuUW -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpmI8qEc
+10/01/2016 11:30:06 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:06 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpCI2JC3 -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpBI5Ak6 -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpYYsKet -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpoZO93Q
+10/01/2016 11:30:07 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:07 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp7sFUcH -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpujHOTu -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpfI5HHK -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpzBYI7w
+10/01/2016 11:30:08 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:08 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpwmdGiN -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpPMzVrj -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpKrXqjs -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp35Lv5O
+10/01/2016 11:30:08 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:08 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpSZgqoz -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpcOh5tI -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpWKd8cl -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp6ZDSrx
+10/01/2016 11:30:09 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:09 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpRNhM43 -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmptrxdgO -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp5TiFrm -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpeTUt47
+10/01/2016 11:30:10 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:10 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpr8FjQh -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpqw373I -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpHFhiBd -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyrt8pk
+10/01/2016 11:30:12 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:12 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpd2uOmz -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmppud8Jg -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpbTLTIH -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp72rt86
+10/01/2016 11:30:12 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:12 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpzgsra2 -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp1AfR_m -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp30frID -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpUcZPF8
+10/01/2016 11:30:14 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:14 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpwsyS87 -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpsNeqIl -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmptgXNX9 -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpWuCeLN
+10/01/2016 11:30:14 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:14 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp87oVJy -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpMWGmGJ -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpXuEilH -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpVEGvUP
+10/01/2016 11:30:15 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:15 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpXMPbRC -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp1yM8v8 -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpSMUaES -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp3OC3dK
+10/01/2016 11:30:16 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:16 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpiPaYEj -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpqEYbUb -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmp_xY06g -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpR3AYP8
+10/01/2016 11:30:17 AM - humann2.utilities - DEBUG: Using python module : /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py
+10/01/2016 11:30:17 AM - humann2.utilities - INFO: Execute command: /seq/ibdmdb/centos6/bin/python /seq/ibdmdb/centos6/humann2/humann2/quantify/MinPath12hmp.py -any /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpeomSvE -map /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpyAELN6 -report /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpE3631f -details /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpDwEgYz -mps /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe/tmpx8HZp6
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: all
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bifidobacterium.s__Bifidobacterium_adolescentis
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Coprococcus.s__Coprococcus_sp_ART55_1
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bacteroides.s__Bacteroides_caccae
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Clostridium.s__Clostridium_hathewayi
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bacteroides.s__Bacteroides_ovatus
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Escherichia.s__Escherichia_coli
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Clostridiales_noname.s__Clostridiales_bacterium_1_7_47FAA
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bacteroides.s__Bacteroides_salyersiae
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bacteroides.s__Bacteroides_vulgatus
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Roseburia.s__Roseburia_intestinalis
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Eubacterium.s__Eubacterium_eligens
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Faecalibacterium.s__Faecalibacterium_prausnitzii
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Veillonella.s__Veillonella_parvula
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Alistipes.s__Alistipes_shahii
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Roseburia.s__Roseburia_inulinivorans
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Ruminococcus.s__Ruminococcus_bromii
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Blautia.s__Ruminococcus_gnavus
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bacteroides.s__Bacteroides_dorei
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Streptococcus.s__Streptococcus_salivarius
+10/01/2016 11:30:19 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Veillonella.s__Veillonella_atypica
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Parabacteroides.s__Parabacteroides_distasonis
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Blautia.s__Ruminococcus_torques
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Roseburia.s__Roseburia_hominis
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Clostridium.s__Clostridium_clostridioforme
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Anaerostipes.s__Anaerostipes_hadrus
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Parasutterella.s__Parasutterella_excrementihominis
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Clostridium.s__Clostridium_bolteae
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bacteroides.s__Bacteroides_fragilis
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Streptococcus.s__Streptococcus_parasanguinis
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Alistipes.s__Alistipes_finegoldii
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_1_1_57FAA
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Coprococcus.s__Coprococcus_comes
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_8_1_57FAA
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Haemophilus.s__Haemophilus_parainfluenzae
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Megasphaera.s__Megasphaera_micronuciformis
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Eubacterium.s__Eubacterium_rectale
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bacteroides.s__Bacteroides_xylanisolvens
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Clostridium.s__Clostridium_nexile
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Dialister.s__Dialister_invisus
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_3_1_46FAA
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bacteroides.s__Bacteroides_intestinalis
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bacteroides.s__Bacteroides_thetaiotaomicron
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bifidobacterium.s__Bifidobacterium_animalis
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Collinsella.s__Collinsella_aerofaciens
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Parabacteroides.s__Parabacteroides_sp_D13
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Prevotella.s__Prevotella_copri
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Veillonella.s__Veillonella_dispar
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bacteroides.s__Bacteroides_uniformis
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bifidobacterium.s__Bifidobacterium_longum
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Sutterella.s__Sutterella_wadsworthensis
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Ruminococcus.s__Ruminococcus_lactaris
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bacteroides.s__Bacteroides_stercoris
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Ruminococcus.s__Ruminococcus_callidus
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Burkholderiales_noname.s__Burkholderiales_bacterium_1_1_47
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Bacteroides.s__Bacteroides_cellulosilyticus
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: unclassified
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Dorea.s__Dorea_longicatena
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Flavonifractor.s__Flavonifractor_plautii
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Blautia.s__Ruminococcus_obeum
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Clostridium.s__Clostridium_symbiosum
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Dorea.s__Dorea_formicigenerans
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Akkermansia.s__Akkermansia_muciniphila
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Parabacteroides.s__Parabacteroides_merdae
+10/01/2016 11:30:20 AM - humann2.quantify.modules - DEBUG: Compute pathway abundance for bug: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_7_1_58FAA
+10/01/2016 11:30:30 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: all
+10/01/2016 11:30:33 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bifidobacterium.s__Bifidobacterium_adolescentis
+10/01/2016 11:30:33 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Coprococcus.s__Coprococcus_sp_ART55_1
+10/01/2016 11:30:34 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bacteroides.s__Bacteroides_caccae
+10/01/2016 11:30:35 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Clostridium.s__Clostridium_hathewayi
+10/01/2016 11:30:36 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bacteroides.s__Bacteroides_ovatus
+10/01/2016 11:30:37 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Escherichia.s__Escherichia_coli
+10/01/2016 11:30:39 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Clostridiales_noname.s__Clostridiales_bacterium_1_7_47FAA
+10/01/2016 11:30:39 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bacteroides.s__Bacteroides_salyersiae
+10/01/2016 11:30:40 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bacteroides.s__Bacteroides_vulgatus
+10/01/2016 11:30:40 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Roseburia.s__Roseburia_intestinalis
+10/01/2016 11:30:41 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Eubacterium.s__Eubacterium_eligens
+10/01/2016 11:30:41 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Faecalibacterium.s__Faecalibacterium_prausnitzii
+10/01/2016 11:30:42 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Veillonella.s__Veillonella_parvula
+10/01/2016 11:30:43 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Alistipes.s__Alistipes_shahii
+10/01/2016 11:30:44 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Roseburia.s__Roseburia_inulinivorans
+10/01/2016 11:30:44 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Ruminococcus.s__Ruminococcus_bromii
+10/01/2016 11:30:44 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Blautia.s__Ruminococcus_gnavus
+10/01/2016 11:30:45 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bacteroides.s__Bacteroides_dorei
+10/01/2016 11:30:46 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Streptococcus.s__Streptococcus_salivarius
+10/01/2016 11:30:46 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Veillonella.s__Veillonella_atypica
+10/01/2016 11:30:47 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Parabacteroides.s__Parabacteroides_distasonis
+10/01/2016 11:30:48 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Blautia.s__Ruminococcus_torques
+10/01/2016 11:30:49 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Roseburia.s__Roseburia_hominis
+10/01/2016 11:30:50 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Clostridium.s__Clostridium_clostridioforme
+10/01/2016 11:30:50 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Anaerostipes.s__Anaerostipes_hadrus
+10/01/2016 11:30:51 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Parasutterella.s__Parasutterella_excrementihominis
+10/01/2016 11:30:52 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Clostridium.s__Clostridium_bolteae
+10/01/2016 11:30:52 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bacteroides.s__Bacteroides_fragilis
+10/01/2016 11:30:53 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Streptococcus.s__Streptococcus_parasanguinis
+10/01/2016 11:30:54 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Alistipes.s__Alistipes_finegoldii
+10/01/2016 11:30:54 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_1_1_57FAA
+10/01/2016 11:30:54 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Coprococcus.s__Coprococcus_comes
+10/01/2016 11:30:54 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_8_1_57FAA
+10/01/2016 11:30:54 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Haemophilus.s__Haemophilus_parainfluenzae
+10/01/2016 11:30:55 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Megasphaera.s__Megasphaera_micronuciformis
+10/01/2016 11:30:55 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Eubacterium.s__Eubacterium_rectale
+10/01/2016 11:30:56 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bacteroides.s__Bacteroides_xylanisolvens
+10/01/2016 11:30:57 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Clostridium.s__Clostridium_nexile
+10/01/2016 11:30:57 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Dialister.s__Dialister_invisus
+10/01/2016 11:30:58 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_3_1_46FAA
+10/01/2016 11:30:58 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bacteroides.s__Bacteroides_intestinalis
+10/01/2016 11:30:58 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bacteroides.s__Bacteroides_thetaiotaomicron
+10/01/2016 11:30:59 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bifidobacterium.s__Bifidobacterium_animalis
+10/01/2016 11:30:59 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Collinsella.s__Collinsella_aerofaciens
+10/01/2016 11:30:59 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Parabacteroides.s__Parabacteroides_sp_D13
+10/01/2016 11:31:00 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Prevotella.s__Prevotella_copri
+10/01/2016 11:31:00 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Veillonella.s__Veillonella_dispar
+10/01/2016 11:31:01 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bacteroides.s__Bacteroides_uniformis
+10/01/2016 11:31:02 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bifidobacterium.s__Bifidobacterium_longum
+10/01/2016 11:31:02 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Sutterella.s__Sutterella_wadsworthensis
+10/01/2016 11:31:02 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Ruminococcus.s__Ruminococcus_lactaris
+10/01/2016 11:31:03 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bacteroides.s__Bacteroides_stercoris
+10/01/2016 11:31:03 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Ruminococcus.s__Ruminococcus_callidus
+10/01/2016 11:31:03 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Burkholderiales_noname.s__Burkholderiales_bacterium_1_1_47
+10/01/2016 11:31:04 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Bacteroides.s__Bacteroides_cellulosilyticus
+10/01/2016 11:31:04 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: unclassified
+10/01/2016 11:31:05 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Dorea.s__Dorea_longicatena
+10/01/2016 11:31:06 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Flavonifractor.s__Flavonifractor_plautii
+10/01/2016 11:31:06 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Blautia.s__Ruminococcus_obeum
+10/01/2016 11:31:07 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Clostridium.s__Clostridium_symbiosum
+10/01/2016 11:31:07 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Dorea.s__Dorea_formicigenerans
+10/01/2016 11:31:07 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Akkermansia.s__Akkermansia_muciniphila
+10/01/2016 11:31:08 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Parabacteroides.s__Parabacteroides_merdae
+10/01/2016 11:31:08 AM - humann2.quantify.modules - DEBUG: Compute pathway coverage for bug: g__Lachnospiraceae_noname.s__Lachnospiraceae_bacterium_7_1_58FAA
+10/01/2016 11:31:09 AM - humann2.quantify.modules - DEBUG: Print pathways _Abundance
+10/01/2016 11:31:09 AM - humann2.quantify.modules - DEBUG: Print pathways _Coverage
+10/01/2016 11:31:09 AM - humann2.humann2 - INFO: TIMESTAMP: Completed 	computing pathways 	:	 205	 seconds
+10/01/2016 11:31:09 AM - humann2.humann2 - INFO: 
+Output files created: 
+/seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_genefamilies.tsv
+/seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_pathabundance.tsv
+/seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_pathcoverage.tsv
+
+10/01/2016 11:31:10 AM - humann2.utilities - DEBUG: Remove directory: /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2/tmpYkZkwe
+10/01/2016 11:31:12 AM - humann2.utilities - DEBUG: Remove directory: /seq/ibdmdb/processing/HMP2/WGS/1508/kbayer/anadama_products/HSM5MD5X/HSM5MD5X_humann2_temp_M5TmD2
