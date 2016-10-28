@@ -9,4 +9,6 @@ KO_ctl_count.csv = control ko abundance
 ctl_onlyvsca_aa =  ctl specific kos
 aa_onlyvsctl_ca = aa specific kos
 ca_onlyvsctl_aa = ca specific kos
+healthy_ibd_specific_seed = 
+ibd_specific_seed = 
 
