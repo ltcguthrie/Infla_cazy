@@ -1,5 +1,7 @@
-K03382	0.25
-K01500	0.25
-K01522	1
-K08710	0.25
-K05394	0.25
+KO	C	EC	Gene_ID	State	Brite
+K03382	0.25	3.5.99.3	hydroxyatrazine ethylaminohydrolase	Healthy	Xenobiotics biodegradation and metabolism
+K01500	0.25					Healthy
+K01522	1	3.6.1.29	bis(5'-adenosyl)-triphosphatase	Healthy	Nucleotide metabolism
+K08710	0.25	3.5.4.42	N-isopropylammelide isopropylaminohydrolase	   Healthy	Xenobiotics biodegradation and metabolism
+K05394	0.25	3.8.1.8		atrazine chlorohydrolase	Healthy		   Xenobiotics biodegradation and metabolism
+
