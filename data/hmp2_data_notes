@@ -2,6 +2,11 @@ Resources
 * https://ibdmdb.org/tunnel/public/HMP2_MT/WGS/1524/rschwager/anadama_products/rawfiles
 ##files
 ibd_cazy.tsv = CAzy counts across samples
-LeahG:data leahguthrie$ emacs KO_aa_count.csv = advanced adenoma ko abundance
-LeahG:data leahguthrie$ emacs KO_ca_count.csv = carcinoma ko abundance
-LeahG:data leahguthrie$ emacs KO_ctl_count.csv = control ko abundance
+KO_aa_count.csv = advanced adenoma ko abundance
+KO_ca_count.csv = carcinoma ko abundance
+KO_ctl_count.csv = control ko abundance
+
+ctl_onlyvsca_aa =  ctl specific kos
+aa_onlyvsctl_ca = aa specific kos
+ca_onlyvsctl_aa = ca specific kos
+

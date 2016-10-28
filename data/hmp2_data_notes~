@@ -3,5 +3,5 @@ Resources
 ##files
 ibd_cazy.tsv = CAzy counts across samples
 LeahG:data leahguthrie$ emacs KO_aa_count.csv = advanced adenoma ko abundance
-LeahG:data leahguthrie$ emacs KO_ca_count.csv 
-LeahG:data leahguthrie$ emacs KO_ctl_count.csv 
+LeahG:data leahguthrie$ emacs KO_ca_count.csv = carcinoma ko abundance
+LeahG:data leahguthrie$ emacs KO_ctl_count.csv = control ko abundance

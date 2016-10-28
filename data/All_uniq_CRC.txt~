@@ -1,0 +1,17 @@
+KO	C	EC	Gene_ID	State
+K11195	0.2	2.7.1.202	Fructose PTS permease	Control
+K11422	0.5	2.1.1.43	histone-lysine N-methyltransferase	Control
+K01771	1	4.6.1.13	1-phosphatidylinositol phosphodiesterase	Control
+
+KO	C	EC	Gene_ID	State
+K00887	1	2.7.1.66	undecaprenol kinase	Advanced adenoma
+
+KO	C	EC	Gene_ID	State	Brite
+K04039	0.5	1.3.7.7	light-independent protochlorophyllide reductase subunit B Carcinoma	Metabolism of cofactors and vitamins
+K08092	1	1.1.1.130 	3-dehydro-L-gulonate 2-dehydrogenase	Carcinoma Carbohydrate metabolism
+K01186	1	3.2.1.18	sialidase-1	     Carcinoma		Lipid metabolism/Glycan biosynthesis and metabolism/
+K04037	0.5	1.3.7.7		light-independent protochlorophyllide reductase subunit L	Carcinoma    Metabolism of cofactors and vitamins
+K00637	1	2.3.1.26	sterol O-acyltransferase	      Carcinoma	Lipid metabolism
+K01134	1	3.1.6.8		arylsulfatase A			      Lipid metabolism/Transport and catabolism
+K11429	1	2.1.1.43	histone-lysine N-methyltransferase SUV420H  Amino acid metabolism
+
