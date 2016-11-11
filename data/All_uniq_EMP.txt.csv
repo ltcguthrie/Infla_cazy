@@ -1,0 +1,29 @@
+KO,Confidence_Score,EC,Gene_ID,State,Brite
+K01130,1,3.1.6.1,arylsulfatase,High,Lipid metabolism
+K01469,1,3.5.2.9,5-oxoprolinase (ATP-hydrolysing),High,Metabolism of other amino acids
+K08092,1,1.1.1.130,3-dehydro-L-gulonate 2-dehydrogenase,High, Carbohydrate metabolism
+K02812,1,2.7.1.206,PTS system  sorbose-specific IIA component  ,High, Carbohydrate metabolism/Membrane transport
+K01771,1,4.6.1.13,1-phosphatidylinositol phosphodiesterase,High, Carbohydrate metabolism
+K11695,0.333333333,2.3.2.18,peptidoglycan pentaglycine glycine transferase,Low,Glycan biosynthesis and metabolism
+K02083,0.25,3.5.3.9,allantoate deiminase,Low, Nucleotide metabolism
+K01466,0.25,3.5.2.5,allantoinase,Low, Nucleotide metabolism
+K05528,0.333333333,2.4.1.232,,Low,
+K01049,1,2.4.1.232,alpha 1 6-mannosyltransferase,Low,Glycan biosynthesis and metabolism
+K05546,0.333333333,3.2.1.84,alpha 1 3-glucosidase,Low,Glycan biosynthesis and metabolism
+K11694,0.333333333,2.3.2.17,peptidoglycan pentaglycine glycine transferase,Low,Glycan biosynthesis and metabolism
+K05898,0.333333333,1.3.99.4,3-oxosteroid 1-dehydrogenase,Low,Xenobiotics biodegradation and metabolism
+K00218,0.25,1.3.1.33,protochlorophyllide reductase low,Low,Metabolism of cofactors and vitamins
+K11422,1,2.1.1.43,histone-lysine N-methyltransferase SETD1,Low,Amino acid metabolism
+K11693,0.333333333,2.3.2.16,peptidoglycan pentaglycine glycine transferase,Low,Glycan biosynthesis and metabolism
+K00887,1,2.7.1.66,undecaprenol kinase,Low,Glycan biosynthesis and metabolism
+K04037,0.25,1.3.7.7,light-independent protochlorophyllide reductase subunit L,Low,Metabolism of cofactors and vitamins
+K07127,0.25,3.5.2.17,5-hydroxyisourate hydrolase,Low,Nucleotide metabolism
+K04034,0.25,4.-.-.-,anaerobic magnesium-protoporphyrin IX monomethyl ester cyclase,Low,Metabolism of cofactors and vitamins
+K01131,0.333333333,3.1.6.2,steryl-sulfatase ,Low, Lipid metabolism
+K01237,1,3.2.1.147,myrosinase,Low, Amino acid metabolism
+K01522,1,3.6.1.29,bis(5'-adenosyl)-triphosphatase,Low, Nucleotide metabolism
+K04035,0.25,1.14.13.81,magnesium-protoporphyrin IX monomethyl ester (oxidative) cyclase,Low,Metabolism of cofactors and vitamins 
+K01253,1,3.3.2.9,microsomal epoxide hydrolase,Low,Xenobiotics biodegradation and metabolism
+K01230,0.333333333,3.2.1.113,mannosyl-oligosaccharide alpha-1-2-mannosidase,Low,low Glycan biosynthesis and metabolism
+K13485,0.25,4.1.1.97,2-oxo-4-hydroxy-4-carboxy-5-ureidoimidazoline decarboxylase ,Low, Nucleotide metabolism
+K01822,0.333333333,5.3.3.1,steroid Delta-isomerase,Low,Lipid metabolism/Xenobiotics biodegradation and metabolism
